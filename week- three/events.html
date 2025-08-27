@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+<label>
+    price: <input type="number" id ="price"></label>
+<label><br><br>
+    quantity:<input type="number" id ="quantity"></label><br><br>
+
+    <button id="calcBtn">calculate total</button>
+    <p id="total"></p>
+
+    <!-- <button id ="click">click me</button> -->
+    <script src="Events.js"></script>
+
+
+    <form id="orderForm">
+
+        <label for="customerName">customer name:<input type="text" id="customer"></label><br><br>
+        <select class="form-select" id="furniture">
+  <option value=""> select </option>
+  <option value="chair">chair</option>
+  <option value="table">table</option>
+  <option value="bed">bed</option>
+</select>
+<label><br><br>
+    pricePerItem: <input type="number" id ="price"></label><br><br>
+<label>quantity:<input type="number" id ="quantity"></label><br><br>
+    <!-- <button id="calcBtn">calculate total</button>
+    <p id="total"></p> -->
+<button type ="submit">place order</button>
+    </form>
+</body>
+</html>

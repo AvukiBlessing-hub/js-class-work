@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Async vs Blocking Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 24px;
+        }
+
+        .card {
+            max-width: 700px;
+            margin: 0 auto;
+            border: 1px solid #eee;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, .06);
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+
+        code,
+        pre {
+            background: #f7f7f7;
+            padding: 2px 6px;
+            border-radius: 6px;
+        }
+
+        .hint {
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h1>Asynchronous vs Blocking (JavaScript)</h1>
+        <p class="hint">
+            This page loads your script and runs both demos automatically.
+            Open your browser’s <strong>Console</strong> to see the logs:
+            <code>Ctrl+Shift+J</code> (Windows/Linux) or <code>Cmd+Option+J</code> (Mac).
+        </p>
+        <ul>
+            <li><strong>Blocking demo</strong>: runs <code>getData()</code> and blocks for ~3s.</li>
+            <li><strong>Async demo</strong>: runs <code>run()</code> which awaits <code>getDataAsync()</code> without
+                freezing.</li>
+        </ul>
+    </div>
+
+    <!-- Load your JS exactly as you wrote it -->
+    <script src="async.js"></script>
+</body>
+
+</html>

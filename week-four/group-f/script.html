@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="script.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📌 My Task Manager</h1>
+            <button id="themeToggle">🌙</button>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-group">
+            <input type="text" id="searchInput" placeholder="Search tasks...">
+        </div>
+
+        <!-- Task Input -->
+        <div class="input-group">
+            <input type="text" id="taskInput" placeholder="Enter a new task...">
+            <button id="addTaskBtn">Add Task</button>
+        </div>
+
+        <!-- Clear Buttons -->
+        <div class="clear-group">
+            <button id="clearCompletedBtn">Clear Completed</button>
+            <button id="clearAllBtn">Clear All</button>
+        </div>
+
+        <!-- Task List -->
+        <h2>📝 Tasks</h2>
+        <ul id="taskList"></ul>
+
+        <!-- Completed Tasks -->
+        <h2>✅ Completed Tasks</h2>
+        <ul id="completedTasks"></ul>
+
+        <!-- Deleted Tasks -->
+        <h2>🗑 Deleted Tasks</h2>
+        <ul id="deletedTasks"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

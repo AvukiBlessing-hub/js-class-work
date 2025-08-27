@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Example</title>
+</head>
+
+<body>
+
+        <h1 id="title">Hello World</h1>
+        <p class="message">Welcome to DOM learning.</p>
+
+        <script>
+
+            // Accessing DOM elements
+            const titleElement = document.getElementById("title");
+            const messageElement = document.querySelector(".message");
+
+            console.log(titleElement.textContent); // Outputs: Hello World
+            console.log(messageElement.textContent); // Outputs: Welcome to DOM learning.
+
+            // Changing DOM content
+            titleElement.textContent = "DOM is Awesome!";
+            messageElement.style.color = "blue";
+        </script>
+
+        <script src="numbers.js"></script>
+        <script src="boolean.js"></script>
+        <Script src="conditionals.js"></Script>
+        <Script src="loops.js"></Script>
+
+
+    </body>
+    </html>

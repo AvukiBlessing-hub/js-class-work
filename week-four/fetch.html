@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fetch HTML Example</title>
+</head>
+<body>
+  <h2>Main Page</h2>
+  <div id="container">Loading content...</div>
+
+  <script>
+    fetch("content.html")
+      .then(response => response.text())  // Convert response to text (HTML)
+      .then(html => {
+        document.getElementById("container").innerHTML = html;
+      })
+      .catch(error => console.error("Error loading HTML:", error));
+  </script>
+</body>
+</html>
